@@ -2,9 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Newbie</title>
+    <style type="text/css">
+        #summit {color: chartreuse;}
+        #month {color: chartreuse;}
+        #textarea {color: chartreuse;}
+        .mienbac {color: chartreuse}
+        .mientrung {color: blue}
+        .miennam {color: brown}
+        .trunguong {background-color: azure; font-size: 20px;}
+    </style>
 </head>
 <body>
-    <h1>Demo Push</h1>
+    <div>
+        <form name="dangky" method="post" action="">
+            <p>
+                <label for="hoten">Họ tên</label>
+                <input type=text id="hoten" name="hoten" value="" placeholder="Nhập họ và tên">
+            </p>
+            <p>
+                <label for="sdt">SĐT</label>
+                <input type="text" id="sdt" name="sdt" value="" placeholder="Nhập số điện thoại">
+                <button>Nhập mã xác thực</button>
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" value="" placeholder="Nhập email">
+            </p>
+            <p>
+                <label for="pass">Password</label>
+                <input type="password" id="pass" name="pass" placeholder="Nhập mật khẩu">
+            </p>
+            <p>
+                <label for="sex">Giới tính</label>
+                <input type="radio" id="sex" name="sex" value="Nam">
+                <label for="sex">Nam</label>
+                <input checked id="sex2" name="sex" type="radio" value="Nữ">
+                <label for="sex2">Nữ</label>
+            </p>
+            <p>
+                <label for="month">Tháng</label>
+                <select name="month" id="month" multiple>
+                    <option value="1">Thang 1</option>
+                    <option value="2">Thang 2</option>
+                    <option value="3" selected>Thang 3</option>
+                </select>
+            </p>
+            <p>
+                <label for="textarea">Nội dung</label>
+                <textarea id="textarea" name="textarea" placeholder="Nhập nội dung ghi chú" rows="5" cols="5"></textarea>
+            </p>
+            <p>
+                <label for="checkbox"></label>
+                <input type="checkbox" id="checkbox" name="checkbox">Đồng ý điều khoản
+            </p>
+            <p>
+                <label for="summit"></label>
+                <input type="submit" id="summit" name="summit" value="Gửi">
+            </p>
+            <ul>
+                <li class="mienbac trunguong">Hà nội</li>
+                <li class="mientrung trunguong">Đà nẵng</li>
+                <li class="miennam trunguong">Hồ chí minh</li>
+            </ul>
+            <ol>
+                <li class="mienbac">Nam định</li>
+                <li class="mienbac">Ninh bình</li>
+                <li class="mientrung">Thanh hóa</li>
+                <li class="mientrung">Nghệ an</li>
+                <li class="miennam">Cần thơ</li>
+                <li class="miennam">Cà mau</li>
+            </ol>
+        </form>
+    </div>
 </body>
-</html>
